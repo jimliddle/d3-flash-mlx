@@ -1,0 +1,20 @@
+[
+  {
+    "device": "mps",
+    "tokens": 1,
+    "max_abs_hidden_error": 0.0390625,
+    "mean_abs_hidden_error": 0.010182738304138184
+  },
+  {
+    "device": "mps",
+    "tokens": 17,
+    "max_abs_hidden_error": 0.046875,
+    "mean_abs_hidden_error": 0.008804216049611568
+  },
+  {
+    "device": "mps",
+    "tokens": 65,
+    "max_abs_hidden_error": 0.046875,
+    "mean_abs_hidden_error": 0.007570778951048851
+  }
+]

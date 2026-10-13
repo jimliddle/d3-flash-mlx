@@ -1,0 +1,20 @@
+[
+  {
+    "device": "cpu",
+    "tokens": 1,
+    "max_abs_hidden_error": 0.0390625,
+    "mean_abs_hidden_error": 0.010182738304138184
+  },
+  {
+    "device": "cpu",
+    "tokens": 17,
+    "max_abs_hidden_error": 0.046875,
+    "mean_abs_hidden_error": 0.00865158997476101
+  },
+  {
+    "device": "cpu",
+    "tokens": 65,
+    "max_abs_hidden_error": 0.046875,
+    "mean_abs_hidden_error": 0.007673782762140036
+  }
+]

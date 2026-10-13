@@ -1,0 +1,79 @@
+{
+  "load_seconds": 0.6239382494240999,
+  "cases": [
+    {
+      "target_tokens": 512,
+      "actual_tokens": 510,
+      "repeat": 0,
+      "seconds": 0.20074804220348597,
+      "keep_probability": 0.8785112500190735,
+      "peak_mlx_bytes": 16035854340,
+      "peak_rss_bytes": 16467181568
+    },
+    {
+      "target_tokens": 512,
+      "actual_tokens": 510,
+      "repeat": 1,
+      "seconds": 0.15180599968880415,
+      "keep_probability": 0.8785112500190735,
+      "peak_mlx_bytes": 16035854340,
+      "peak_rss_bytes": 16467247104
+    },
+    {
+      "target_tokens": 2048,
+      "actual_tokens": 2046,
+      "repeat": 0,
+      "seconds": 0.7499700831249356,
+      "keep_probability": 0.8708296418190002,
+      "peak_mlx_bytes": 16577843212,
+      "peak_rss_bytes": 16468377600
+    },
+    {
+      "target_tokens": 2048,
+      "actual_tokens": 2046,
+      "repeat": 1,
+      "seconds": 0.5590577498078346,
+      "keep_probability": 0.8708296418190002,
+      "peak_mlx_bytes": 16577843212,
+      "peak_rss_bytes": 16468443136
+    },
+    {
+      "target_tokens": 4096,
+      "actual_tokens": 4086,
+      "repeat": 0,
+      "seconds": 1.1655850419774652,
+      "keep_probability": 0.9083205461502075,
+      "peak_mlx_bytes": 17341263884,
+      "peak_rss_bytes": 16469737472
+    },
+    {
+      "target_tokens": 4096,
+      "actual_tokens": 4086,
+      "repeat": 1,
+      "seconds": 1.1927735842764378,
+      "keep_probability": 0.9083205461502075,
+      "peak_mlx_bytes": 17341263884,
+      "peak_rss_bytes": 16469803008
+    },
+    {
+      "target_tokens": 8192,
+      "actual_tokens": 8190,
+      "repeat": 0,
+      "seconds": 3.148785042576492,
+      "keep_probability": 0.8326113224029541,
+      "peak_mlx_bytes": 19114848266,
+      "peak_rss_bytes": 16472014848
+    },
+    {
+      "target_tokens": 8192,
+      "actual_tokens": 8190,
+      "repeat": 1,
+      "seconds": 3.339595541357994,
+      "keep_probability": 0.8326113224029541,
+      "peak_mlx_bytes": 19114848266,
+      "peak_rss_bytes": 16472080384
+    }
+  ],
+  "load_caveat": "New process; OS filesystem cache was not flushed",
+  "scope": "Synthetic text only; no live sessions or compaction hook"
+}

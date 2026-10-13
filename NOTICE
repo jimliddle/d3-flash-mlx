@@ -1,0 +1,13 @@
+d3-flash (Decision 3.0)
+Copyright 2026 vLLM Semantic Router Team
+
+Built on Qwen/Qwen3.5-9B (Apache-2.0).
+
+d3-flash-mlx: text-only MLX runtime, tests and documentation
+Copyright 2026 jimliddle
+
+This distribution includes unchanged reference files from vllm-sr/d3-flash
+and an unchanged audit snapshot from ahmedandaloes/d3-flash-mlx.
+Their original LICENSE and NOTICE files are retained in upstream/.
+Source revisions and the scope of this port are listed in THIRD_PARTY.md.
+This is an independent project; upstream authors do not endorse it.

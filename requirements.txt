@@ -1,0 +1,7 @@
+mlx==0.32.3
+mlx-vlm @ git+https://github.com/Blaizzy/mlx-vlm@4f4634bb813c0298cb1467bed2e957526c71d0b4
+transformers==5.17.0
+huggingface-hub==1.33.0
+safetensors==0.8.0
+torch==2.14.1
+accelerate==1.15.0

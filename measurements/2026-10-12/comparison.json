@@ -1,0 +1,67 @@
+{
+  "gate": "identical tokens, identical winning decision, max probability delta <= 0.03",
+  "passed": true,
+  "cases": [
+    {
+      "id": "explicit-yes",
+      "same_decision": true,
+      "max_probability_delta": 6.4373016357421875e-06,
+      "passed": true
+    },
+    {
+      "id": "explicit-no",
+      "same_decision": true,
+      "max_probability_delta": 1.0862131603062153e-06,
+      "passed": true
+    },
+    {
+      "id": "three-way-routing",
+      "same_decision": true,
+      "max_probability_delta": 9.304285049438477e-05,
+      "passed": true
+    },
+    {
+      "id": "keep-evidence",
+      "same_decision": true,
+      "max_probability_delta": 1.025330857373774e-05,
+      "passed": true
+    },
+    {
+      "id": "drop-duplicate",
+      "same_decision": true,
+      "max_probability_delta": 2.1278858184814453e-05,
+      "passed": true
+    },
+    {
+      "id": "untrusted-instruction",
+      "same_decision": true,
+      "max_probability_delta": 1.7814396414905787e-05,
+      "passed": true
+    },
+    {
+      "id": "27-options",
+      "same_decision": true,
+      "max_probability_delta": 0.0003166794776916504,
+      "passed": true
+    },
+    {
+      "id": "mixed-sentiment",
+      "same_decision": true,
+      "max_probability_delta": 0.0006817718967795372,
+      "passed": true
+    },
+    {
+      "id": "long-retention-160",
+      "same_decision": true,
+      "max_probability_delta": 0.004736125469207764,
+      "passed": true
+    },
+    {
+      "id": "long-retention-660",
+      "same_decision": true,
+      "max_probability_delta": 0.008798807859420776,
+      "passed": true
+    }
+  ],
+  "caveat": "Small synthetic smoke test, not a compaction safety or calibration benchmark"
+}
