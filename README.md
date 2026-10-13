@@ -16,7 +16,7 @@ It does not support images, video, the `score` question type, batching, or an HT
 
 ## Setup
 
-Tested with Python 3.12 on an Apple M5 Max with 128 GiB RAM. Other Apple Silicon machines have not been tested here. The longest test used about 17.8 GiB of MLX memory; leave room for macOS and other applications. This is not a claim that it fits on a 24 GB machine.
+Tested with Python 3.12 on an Apple M5 Max with 128 GiB RAM. Other Apple Silicon machines have not been tested here. The longest test used about 17.8 GiB of MLX memory -  leave room for macOS and other applications (this is not a claim that it fits on a 24 GB machine).
 
 The model download is about 16.8 GB, plus the Python environment. Weights are not included in this repository. The download uses the original BF16 checkpoint, not a 4-bit conversion.
 
@@ -29,7 +29,7 @@ python -m pip install -r requirements.txt
 python download_reference.py
 ```
 
-The downloader pins the model revision, checks root-file sizes and large-file SHA-256 hashes, and downloads the upstream verification assets. It does not use a Hugging Face token. MLX-VLM is pinned to a public Git revision because the version used here was not available on PyPI. PyTorch and Accelerate are included for the reference tests.
+The downloader pins the model revision, checks root file sizes and large file SHA-256 hashes, and downloads the upstream verification assets. It does not use a Hugging Face token. MLX-VLM is pinned to a public Git revision because the version used here was not available on PyPI. PyTorch and Accelerate are included for the reference tests.
 
 ## Use
 
@@ -59,7 +59,7 @@ result = model.system_one(
 print(result)
 ```
 
-The default limit is 4,096 tokens, including the formatted question. Set `max_length` when constructing the model to change it. Trained-checkpoint comparisons here cover inputs up to 8,058 tokens; longer inputs have not been validated. Questions run sequentially. Keep the model object alive to avoid loading it for each request; exiting the process releases it.
+The default limit is 4,096 tokens, including the formatted question. Set `max_length` when constructing the model to change it. Trained checkpoint comparisons here cover inputs up to 8,058 tokens and longer inputs have not been validated. Questions run sequentially. Keep the model object alive to avoid loading it for each request, and exiting the process releases it.
 
 Treat the returned scores as model outputs, not measured probabilities of correctness. Keep permission checks and irreversible actions outside the model.
 
@@ -83,8 +83,8 @@ python benchmark.py
 
 `evaluate.py` and `benchmark.py` accept `--model-dir` and `--output-dir`. Run them one at a time so the two models do not compete for memory. The reference can use `--device cpu`, but it is much slower. Generated results are ignored by Git.
 
-The recorded ten-case test matched the reference's winning decision on every case. The largest probability difference was 0.0088, or 0.88 percentage points. These are synthetic compatibility checks, not a general accuracy benchmark. See [results](RESULTS.md) and the [readout bug note](docs/READOUT.md).
+The recorded ten case test matched the reference's winning decision on every case. The largest probability difference was 0.0088, or 0.88 percentage points. These are synthetic compatibility checks, not a general accuracy benchmark. See [results](RESULTS.md) and the [readout bug note](docs/READOUT.md).
 
 ## Licence and sources
 
-Apache-2.0. See [LICENSE](LICENSE), [NOTICE](NOTICE), and [third-party sources](THIRD_PARTY.md). Upstream reference files and notices are retained unchanged. No model weights are redistributed.
+Apache 2.0. See [LICENSE](LICENSE), [NOTICE](NOTICE), and [third-party sources](THIRD_PARTY.md). Upstream reference files and notices are retained unchanged. No model weights are redistributed.
